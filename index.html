@@ -1,0 +1,104 @@
+<!doctype html><html lang="id"><head><meta charset=utf-8>
+<meta name="viewport" content="width=device-width, initial-scale=1"><title>Neurents — Rekam Jejak Kuantitatif IDX</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;700&display=swap');
+body{background:#0b0d12;color:#c9ccd3;font-family:'DM Sans',sans-serif;margin:0;padding:28px 34px;line-height:1.5}
+.brand{font-weight:700;letter-spacing:.02em;color:#e8eaee} .brand span{color:#d4af37}
+h1{font-weight:700;margin:2px 0;font-size:22px} h2{font-weight:500;color:#e8eaee;margin:24px 0 6px;font-size:15px}
+.sub{color:#7a7f8c;margin-bottom:14px;font-size:13px} .mono{font-family:'DM Mono',monospace} .hl{color:#d4af37;font-weight:500}
+.k{color:#7a7f8c}
+.toggle{display:inline-flex;border:1px solid #2a2e39;border-radius:8px;overflow:hidden;margin:6px 0 18px}
+.toggle button{background:#12141a;color:#9aa0ad;border:0;padding:9px 16px;font-family:inherit;font-size:13px;cursor:pointer}
+.toggle button.on{background:#d4af37;color:#0b0d12;font-weight:700}
+.frame{background:#0e1015;border:1px solid #1f232c;border-left:3px solid #d4af37;border-radius:8px;padding:14px 18px;margin:6px 0 18px}
+.frame b{color:#e8eaee}
+.heros{display:flex;gap:14px;flex-wrap:wrap;margin:8px 0}
+.hero{flex:1;min-width:230px;border:1px solid #1f232c;border-radius:10px;padding:16px 18px;background:#0e1015}
+.hero .lbl{font-size:10px;letter-spacing:.06em;color:#7a7f8c;text-transform:uppercase}
+.hero .big{font-size:30px;font-weight:700;margin:6px 0} .hero .sm{font-size:12px;color:#9aa0ad}
+.hero.good .big{color:#4ea67a} .hero.bad .big{color:#c66} .hero.empty .big{color:#d4af37}
+.verdict{font-size:14px;background:#101216;border:1px solid #1f232c;border-radius:8px;padding:14px 18px;margin:10px 0}
+table{border-collapse:collapse;width:100%;margin:10px 0;font-size:13px}
+th,td{padding:7px 10px;text-align:right;border-bottom:1px solid #1f232c}
+th{color:#7a7f8c;font-weight:500;text-transform:uppercase;font-size:10px;letter-spacing:.05em}
+td.nm{text-align:left;color:#e8eaee} tr:hover td{background:#12141a}
+img{width:100%;max-width:900px;margin:10px 0;border:1px solid #1f232c;border-radius:6px}
+.card{border:1px solid #1f232c;border-radius:8px;padding:14px 16px;margin:12px 0;background:#0e1015}
+.ct{font-family:'DM Mono',monospace;color:#e8eaee;font-size:12px;margin-bottom:10px}
+.two{display:flex;gap:20px;flex-wrap:wrap} .two>div{flex:1;min-width:240px}
+.lbl{font-size:10px;text-transform:uppercase;letter-spacing:.05em;margin-bottom:4px}
+.up{color:#4ea67a} .dn{color:#c66} .mini{font-size:12px} .mini td{padding:4px 8px}
+.disc{background:#14100a;border:1px solid #2a2410;border-left:3px solid #d4af37;padding:14px 18px;margin:20px 0;font-size:12.5px;color:#b9a06a}
+.disc b{color:#d9c07a}
+body.mode-awam .pro-only{display:none} body.mode-pro .awam-only{display:none}
+</style></head><body class="mode-awam">
+<div class="brand">NEURENTS <span>·</span> Intelligence</div>
+<h1>Rekam Jejak Kuantitatif IDX</h1>
+<div class="sub mono">peringkat sistematis · daily=h5 · weekly=h20 · benchmark: Rata-rata Pasar · untuk EDUKASI</div>
+
+<div class="toggle"><button id="bAwam" class="on">Ringkas (Awam)</button><button id="bPro">Metodologi (Pro)</button></div>
+
+<div class="frame">
+  <b>Peringkat sistematis + rekam jejak transparan — untuk edukasi.</b><br>
+  Ini <b>hasil analisis kuantitatif</b> yang dibandingkan dengan <b>Rata-rata Pasar</b> untuk
+  <b>membantu Anda memutuskan</b> — <b>bukan</b> rekomendasi beli/jual. Setiap peringkat dibekukan &amp;
+  diberi tanggal, lalu dicocokkan dengan apa yang benar-benar terjadi (out-of-sample).
+</div>
+
+<div class="awam-only">
+  <h2>Grup Unggulan vs Rata-rata Pasar</h2>
+  <div class="heros"><div class='hero empty'><div class='big'>Hari ke-0</div><div class='sm'>Belum ada hasil live — jam baru mulai berdetak. Nilai kami dari rekam jejak yang terbuka, bukan dari janji.</div></div></div>
+  <div class="verdict">Ini <b>hari pertama</b>. Yang ada baru hasil <b>backtest</b> (uji pada data historis), belum ada bukti <b>live</b>. Jangan ambil keputusan transaksi hanya dari ini sekarang — ikuti perjalanannya dan nilai dari rekam jejak yang menumpuk secara terbuka.</div>
+  <div class='sub'>Grafik muncul setelah beberapa periode matang (daily ~1 minggu, weekly ~1 bulan).</div>
+  <h2>Peringkat terbaru (dibekukan &amp; bertanggal)</h2>
+  
+            <div class="card">
+              <div class="ct">daily · 2026-07-01 · 388 saham dinilai</div>
+              <div class="two">
+                <div><div class="lbl up">Grup Unggulan (peringkat teratas)</div>
+                  <table class="mini"><tbody><tr><td>1</td><td class='mono'>ADES</td><td>0.0155</td><td>D10</td></tr><tr><td>2</td><td class='mono'>BSML</td><td>0.0117</td><td>D10</td></tr><tr><td>3</td><td class='mono'>PKPK</td><td>0.0113</td><td>D10</td></tr><tr><td>4</td><td class='mono'>MKAP</td><td>0.0110</td><td>D10</td></tr><tr><td>5</td><td class='mono'>BAIK</td><td>0.0094</td><td>D10</td></tr><tr><td>6</td><td class='mono'>GULA</td><td>0.0090</td><td>D10</td></tr><tr><td>7</td><td class='mono'>MARK</td><td>0.0087</td><td>D10</td></tr><tr><td>8</td><td class='mono'>ZONE</td><td>0.0085</td><td>D10</td></tr><tr><td>9</td><td class='mono'>MLBI</td><td>0.0083</td><td>D10</td></tr><tr><td>10</td><td class='mono'>PTPW</td><td>0.0080</td><td>D10</td></tr></tbody></table></div>
+                <div><div class="lbl dn">Grup Dihindari (peringkat terbawah)</div>
+                  <table class="mini"><tbody><tr><td>379</td><td class='mono'>UVCR</td><td>-0.0059</td><td>D1</td></tr><tr><td>380</td><td class='mono'>KDTN</td><td>-0.0060</td><td>D1</td></tr><tr><td>381</td><td class='mono'>CUAN</td><td>-0.0060</td><td>D1</td></tr><tr><td>382</td><td class='mono'>FUJI</td><td>-0.0064</td><td>D1</td></tr><tr><td>383</td><td class='mono'>DEFI</td><td>-0.0065</td><td>D1</td></tr><tr><td>384</td><td class='mono'>GPSO</td><td>-0.0066</td><td>D1</td></tr><tr><td>385</td><td class='mono'>DPUM</td><td>-0.0066</td><td>D1</td></tr><tr><td>386</td><td class='mono'>RISE</td><td>-0.0075</td><td>D1</td></tr><tr><td>387</td><td class='mono'>TPIA</td><td>-0.0085</td><td>D1</td></tr><tr><td>388</td><td class='mono'>LUCY</td><td>-0.0091</td><td>D1</td></tr></tbody></table></div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="ct">weekly · 2026-07-01 · 388 saham dinilai</div>
+              <div class="two">
+                <div><div class="lbl up">Grup Unggulan (peringkat teratas)</div>
+                  <table class="mini"><tbody><tr><td>1</td><td class='mono'>ADES</td><td>0.0594</td><td>D10</td></tr><tr><td>2</td><td class='mono'>MKAP</td><td>0.0491</td><td>D10</td></tr><tr><td>3</td><td class='mono'>BSML</td><td>0.0485</td><td>D10</td></tr><tr><td>4</td><td class='mono'>PKPK</td><td>0.0440</td><td>D10</td></tr><tr><td>5</td><td class='mono'>MLBI</td><td>0.0386</td><td>D10</td></tr><tr><td>6</td><td class='mono'>BSSR</td><td>0.0364</td><td>D10</td></tr><tr><td>7</td><td class='mono'>MARK</td><td>0.0348</td><td>D10</td></tr><tr><td>8</td><td class='mono'>SPTO</td><td>0.0332</td><td>D10</td></tr><tr><td>9</td><td class='mono'>MGLV</td><td>0.0331</td><td>D10</td></tr><tr><td>10</td><td class='mono'>PTPW</td><td>0.0328</td><td>D10</td></tr></tbody></table></div>
+                <div><div class="lbl dn">Grup Dihindari (peringkat terbawah)</div>
+                  <table class="mini"><tbody><tr><td>379</td><td class='mono'>DPUM</td><td>-0.0172</td><td>D1</td></tr><tr><td>380</td><td class='mono'>RISE</td><td>-0.0176</td><td>D1</td></tr><tr><td>381</td><td class='mono'>FUJI</td><td>-0.0178</td><td>D1</td></tr><tr><td>382</td><td class='mono'>BREN</td><td>-0.0183</td><td>D1</td></tr><tr><td>383</td><td class='mono'>BRPT</td><td>-0.0200</td><td>D1</td></tr><tr><td>384</td><td class='mono'>DSSA</td><td>-0.0213</td><td>D1</td></tr><tr><td>385</td><td class='mono'>PACK</td><td>-0.0218</td><td>D1</td></tr><tr><td>386</td><td class='mono'>CUAN</td><td>-0.0234</td><td>D1</td></tr><tr><td>387</td><td class='mono'>DEFI</td><td>-0.0243</td><td>D1</td></tr><tr><td>388</td><td class='mono'>TPIA</td><td>-0.0320</td><td>D1</td></tr></tbody></table></div>
+              </div>
+            </div>
+  <div class="disc">
+    <b>Penting — baca ini.</b> Neurents menyajikan <b>analisis kuantitatif untuk edukasi</b>, <b>bukan</b>
+    nasihat/rekomendasi investasi dan <b>bukan</b> ajakan membeli/menjual efek. Kinerja masa lalu &amp; hasil
+    backtest <b>tidak menjamin</b> hasil masa depan. Trading saham berisiko dan Anda dapat kehilangan modal.
+    Semua keputusan investasi ada di tangan Anda; pertimbangkan konsultasi dengan pihak berizin. <b>Saat ini belum ada hasil live</b> — yang ada baru backtest.
+  </div>
+</div>
+
+<div class="pro-only">
+  <div class="sub">rank-IC = korelasi peringkat vs realized h-day forward return · LS = top−bottom decile ·
+  realized dua cara: <span class="k">adjusted</span> (match training) &amp; <span class="k">raw</span> (tanpa penyesuaian dividen). cost=25bps/side.</div>
+  <h2>Summary by track (live, out-of-sample)</h2>
+  <table><thead><tr><th>track</th><th>#matured</th><th>mean IC adj</th><th>mean IC raw</th><th>IC hit%</th>
+  <th>LS gross adj</th><th>LS gross raw</th><th>LS net adj</th><th>LS net raw</th><th>turnover</th></tr></thead>
+  <tbody><tr><td colspan='10' style='text-align:center;color:#7a7f8c'>No matured signals yet — the clock is running.</td></tr></tbody></table>
+  
+  
+  <div class="disc">
+    <b>Honest caveats.</b> Adjusted matches the training label but carries a small dividend/split
+    retro-adjustment lookahead; raw is cleaner but ignores corporate actions — truth is bracketed by the two.
+    Universe is survivorship-biased (tickers listed today) — mildly optimistic. Net LS subtracts
+    turnover×2×25bps; real fills/slippage differ. Early on, small samples are noisy.
+  </div>
+</div>
+
+<div class="sub mono" style="margin-top:22px">generated by forward_eval.py · neurents-idx Phase 2 · 0 periode matang</div>
+<script>
+var bA=document.getElementById('bAwam'),bP=document.getElementById('bPro');
+function setMode(m){document.body.className='mode-'+m;bA.classList.toggle('on',m==='awam');bP.classList.toggle('on',m==='pro');}
+bA.onclick=function(){setMode('awam');};bP.onclick=function(){setMode('pro');};setMode('awam');
+</script>
+</body></html>
